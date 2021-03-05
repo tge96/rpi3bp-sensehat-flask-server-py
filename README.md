@@ -13,13 +13,16 @@ pi@rpi3bp:~/sensehat $ sudo python3 server.py
  * Debugger is active!
  * Debugger PIN: 193-365-982
 
-
+in any client browser on your local network, issue <localhost/pressure> displays "Pressure 29.0inHg recorded at 09:15:44"
+and on the server side, you should see something similar to this ->
 192.168.254.23 - - [05/Mar/2021 09:15:44] "GET /pressure HTTP/1.1" 200 -
-192.168.254.23 - - [05/Mar/2021 09:15:44] "GET /favicon.ico HTTP/1.1" 404 -
-192.168.254.23 - - [05/Mar/2021 09:16:16] "GET /pressure HTTP/1.1" 200 -
-192.168.254.23 - - [05/Mar/2021 09:16:16] "GET / HTTP/1.1" 200 -
+
+in any client browser on your local network, issue <localhost/temperature> displays "Temperature 75.1° recorded at 09:16:17"
+and on the server side, you should see something similar to this ->
 192.168.254.23 - - [05/Mar/2021 09:16:17] "GET /temperature HTTP/1.1" 200 -
-192.168.254.23 - - [05/Mar/2021 09:16:28] "GET / HTTP/1.1" 200 -
+
+in any client browser on your local network, issue <localhost/humidity> displays "Humidity 44.6% recorded at 09:16:29"
+and on the server side, you should see something similar to this ->
 192.168.254.23 - - [05/Mar/2021 09:16:29] "GET /humidity HTTP/1.1" 200 -
 
 
