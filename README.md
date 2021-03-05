@@ -1,5 +1,8 @@
 # rpi3bp-sensehat-flask-server-py
-Using flask and python to display sense hat environmental data remotely via &lt;localhost:80/>
+Using flask and python to display sense hat environmental data (temperature, pressure, and humidity) remotely via the following:
+<localhost/temperature>
+<localhost/pressure>
+<localhost/humidity>
 
 pi@rpi3bp:~/sensehat $ sudo python3 server.py 
 
