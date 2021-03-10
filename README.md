@@ -16,6 +16,14 @@ pi@rpi3bp:~/sensehat $ sudo python3 server.py
  * Debugger is active!
  * Debugger PIN: 193-365-982
 
+On your webserver (rpi3bp in my caase) type
+$ export FLASK_APP=server.py
+$ flask run
+
+Note: localhost = ip address of your webserver (rpi3bp in my case).
+
+Then...
+
 in any client browser on your local network, issue <localhost/pressure> displays "Pressure 29.0inHg recorded at 09:15:44"
 and on the server side (Raspberry Pi), you should see something similar to this ->
 192.168.254.23 - - [05/Mar/2021 09:15:44] "GET /pressure HTTP/1.1" 200 -
