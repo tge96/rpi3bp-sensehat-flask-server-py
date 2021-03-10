@@ -6,7 +6,9 @@ Using flask and python to display sense hat environmental data (temperature, pre
 
 On your webserver (rpi3bp in my caase) type:
 
-$ export FLASK_APP=server.py
+$ export FLASK_APP=server.py     # use set instead of export on Windows
+
+$ export FLASK_DEBUG=1           # use set instead of export on Windows
 
 $ flask run
 
