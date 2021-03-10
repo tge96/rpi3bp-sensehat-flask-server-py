@@ -4,6 +4,14 @@ Using flask and python to display sense hat environmental data (temperature, pre
 <localhost/pressure>
 <localhost/humidity>
 
+On your webserver (rpi3bp in my caase) type:
+
+$ export FLASK_APP=server.py
+
+$ flask run
+
+or
+
 pi@rpi3bp:~/sensehat $ sudo python3 server.py 
 
  * Serving Flask app "server" (lazy loading)
@@ -15,10 +23,6 @@ pi@rpi3bp:~/sensehat $ sudo python3 server.py
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 193-365-982
-
-On your webserver (rpi3bp in my caase) type
-$ export FLASK_APP=server.py
-$ flask run
 
 Note: localhost = ip address of your webserver (rpi3bp in my case).
 
